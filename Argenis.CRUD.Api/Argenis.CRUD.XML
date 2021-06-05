@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Argenis.CRUD.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Argenis.CRUD.Api.Controllers.ActivityController.Get(System.Nullable{System.Guid})">
+            <summary>
+            Obtem todas as atividades cadastradas para a versão mais recente do produto ou do guid fornecido
+            </summary>
+            <param name="versionKey">Guid version</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="TypeMerger" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Argenis.CRUD.Borders\Argenis.CRUD.Borders.csproj" />
+    <ProjectReference Include="..\Argenis.CRUD.Shared\Argenis.CRUD.Shared.csproj" />
+    <ProjectReference Include="..\Argenis.CRUD.Borders\Argenis.CRUD.Borders.csproj" />
+  </ItemGroup>
+
+</Project>

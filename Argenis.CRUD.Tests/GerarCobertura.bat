@@ -1,0 +1,1 @@
+Powershell -executionpolicy unrestricted -File  GerarCobertura.ps1

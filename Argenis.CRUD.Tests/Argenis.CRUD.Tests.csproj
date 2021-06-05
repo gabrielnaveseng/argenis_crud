@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Gabriel Naves\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" />
+    <Content Remove="C:\Users\Gabriel Naves\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\Gabriel Naves\.nuget\packages\xunit.runner.visualstudio\2.4.1\build\netcoreapp1.0\xunit.runner.reporters.netcoreapp10.dll" />
+    <None Remove="C:\Users\Gabriel Naves\.nuget\packages\xunit.runner.visualstudio\2.4.1\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" />
+    <None Remove="C:\Users\Gabriel Naves\.nuget\packages\xunit.runner.visualstudio\2.4.1\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" />
+    <None Remove="coverage.opencover.xml" />
+    <None Remove="GerarCobertura.bat" />
+    <None Remove="GerarCobertura.ps1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="29.0.2" />
+    <PackageReference Include="coverlet.msbuild" Version="2.8.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FluentAssertions" Version="5.10.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="TypeMerger" Version="2.1.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Argenis.CRUD.Api\Argenis.CRUD.Api.csproj" />
+    <ProjectReference Include="..\Argenis.CRUD.Borders\Argenis.CRUD.Borders.csproj" />
+    <ProjectReference Include="..\Argenis.CRUD.UseCases\Argenis.CRUD.UseCases.csproj" />
+    <ProjectReference Include="..\Argenis.CRUD.Borders\Argenis.CRUD.Borders.csproj" />
+    <ProjectReference Include="..\Argenis.CRUD.UseCases\Argenis.CRUD.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>
