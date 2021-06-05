@@ -7,6 +7,8 @@ using System;
 using System.Net;
 using System.Net.Http;
 using Argenis.CRUD.Borders.Repositories.Base;
+using Argenis.CRUD.Repositories.Clients;
+using Argenis.CRUD.Borders.Repositories.Clients;
 
 namespace Argenis.CRUD.Configurations
 {
@@ -16,6 +18,7 @@ namespace Argenis.CRUD.Configurations
         {
             services.AddSingleton<IActivityRepository, ActivityRepository>();
             services.AddSingleton<IRepositoryHelper, RepositoryHelper>();
+            services.AddSingleton<IClientsRepository, ClientsRepository>();
         }
 
         static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()

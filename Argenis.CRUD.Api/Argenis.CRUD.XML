@@ -11,5 +11,12 @@
             <param name="versionKey">Guid version</param>
             <returns></returns>
         </member>
+        <member name="M:Argenis.CRUD.Api.Controllers.ClientsController.Get(System.Guid)">
+            <summary>
+            Obtem o cliente cadastrado para o Id
+            </summary>
+            <param name="clientId">Id do cliente</param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
