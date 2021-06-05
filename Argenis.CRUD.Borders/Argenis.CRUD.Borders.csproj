@@ -31,4 +31,8 @@
     <ProjectReference Include="..\Argenis.CRUD.Shared\Argenis.CRUD.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+  </ItemGroup>
+
 </Project>

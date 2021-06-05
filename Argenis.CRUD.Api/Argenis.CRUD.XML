@@ -4,18 +4,25 @@
         <name>Argenis.CRUD.Api</name>
     </assembly>
     <members>
-        <member name="M:Argenis.CRUD.Api.Controllers.ActivityController.Get(System.Nullable{System.Guid})">
-            <summary>
-            Obtem todas as atividades cadastradas para a versão mais recente do produto ou do guid fornecido
-            </summary>
-            <param name="versionKey">Guid version</param>
-            <returns></returns>
-        </member>
         <member name="M:Argenis.CRUD.Api.Controllers.ClientsController.Get(System.Guid)">
             <summary>
             Obtem o cliente cadastrado para o Id
             </summary>
             <param name="clientId">Id do cliente</param>
+            <returns></returns>
+        </member>
+        <member name="M:Argenis.CRUD.Api.Controllers.ClientsController.Update(Argenis.CRUD.Borders.Entities.Client)">
+            <summary>
+            Atualiza os dados do cliente
+            </summary>
+            <param name="cliente">Cliente a ser alterado</param>
+            <returns></returns>
+        </member>
+        <member name="M:Argenis.CRUD.Api.Controllers.ClientsController.Create(Argenis.CRUD.Borders.Entities.Client)">
+            <summary>
+            Cria um cliente
+            </summary>
+            <param name="cliente">Cliente a ser criado</param>
             <returns></returns>
         </member>
     </members>
